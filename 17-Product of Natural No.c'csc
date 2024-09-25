@@ -1,0 +1,16 @@
+//This C program finds product of series: 1 2 3 4 5 .... n 
+#include<stdio.h>
+int main()
+{
+    int i=1,n,product=1;
+    printf("Enter the number of integers you want to find the product of: ");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        product=product*i;
+        i++;
+    }
+    printf("Product of first %d Natural no.'s is %d",n,product);
+    
+    return 0;
+}
